@@ -196,7 +196,7 @@ module OmniAuth
       # some errors in call to /api/oauth.[v2.]access.
       #
       def callback_url
-        options.redirect_uri || full_host + script_name + callback_path
+        options.redirect_uri || full_host + callback_path
       end
       
       ### Possibly obsolete
